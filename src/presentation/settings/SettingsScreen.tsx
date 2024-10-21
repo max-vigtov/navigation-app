@@ -1,9 +1,9 @@
 import { Text, View } from "react-native"
 import { globalStyles } from "../theme/theme"
-import { PrimaryButton } from "../components/PrimaryButton"
+import { PrimaryButton } from "../components/shared/PrimaryButton"
 import { StackActions, useNavigation } from "@react-navigation/native"
 
-export const SettingScreen = () => {
+export const SettingsScreen = () => {
 
   const navigator = useNavigation();
   return (
