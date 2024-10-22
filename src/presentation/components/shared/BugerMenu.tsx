@@ -1,6 +1,8 @@
 import { DrawerActions, useNavigation } from "@react-navigation/native";
 import { useEffect } from "react"
-import { Pressable, Text, View } from "react-native"
+import { Pressable, } from "react-native"
+import { globalColors } from "../../theme/theme";
+import { IonIcon } from "./IonIcon";
 
 export const BugerMenu = () => {
   const navigation = useNavigation();
@@ -8,8 +10,10 @@ export const BugerMenu = () => {
   useEffect(() => {
     navigation.setOptions({ 
       headerLeft: () => (
-        <Pressable onPress={ () => navigation.dispatch( DrawerActions.toggleDrawer )}>
-          <Text>Menu</Text>
+        <Pressable 
+          style={{ marginLeft: 7 }}
+          onPress={ () => navigation.dispatch( DrawerActions.toggleDrawer )}>
+          <IonIcon name={"menu-outline"} color={ globalColors.primary }/>
         </Pressable>
       )
     })
