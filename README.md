@@ -61,4 +61,4 @@ This project uses:
 
 ## License
 
-[Your chosen license]
+MIT
